@@ -97,4 +97,12 @@ export const friendsInfo: Friend[] = [
     tag: 'CNSS',
     color: 'indigo'
   },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/163713803?v=4',
+    name: 'LofiSu',
+    title: 'Learning is a lifelong journey.Keep going.',
+    link: 'https://www.lofisu.chat/',
+    tag: 'Front-end',
+    color: 'sky'
+  },
 ]
