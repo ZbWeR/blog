@@ -93,64 +93,50 @@
           <div class="mt-2 overflow-hidden">
             <!-- TODO:封装ICON组件,抽离背景颜色与svg地址 -->
             <div class="icon-scroll flex w-fit gap-4">
-              <div
-                class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-emerald-200 p-4"
-              >
-                <img src="./img/vue.svg" alt="vue.js" />
+              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-green-100 p-4">
+                <img src="./img/vue.svg" alt="" />
               </div>
-              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-red-200 p-4">
+              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-sky-100 p-4">
+                <img src="./img/react.png" alt="" />
+              </div>
+              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-red-100 p-4">
                 <img src="./img/html.svg" alt="" />
               </div>
-              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-sky-200 p-4">
+              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-cyan-100 p-4">
                 <img src="./img/css.svg" alt="" />
               </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-slate-200 p-4">
-                <img src="./img/tailwind.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-[#f7cb4f] p-4">
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-yellow-300 p-4">
                 <img class="rounded-lg" src="./img/js.webp" alt="" />
               </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-sky-100 p-4">
+                <img class="rounded-lg" src="./img/typescript.png" alt="" />
+              </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-teal-100 p-4">
+                <img src="./img/tailwind.svg" alt="" />
+              </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-purple-100 p-4">
+                <img class="rounded-lg" src="./img/vite.svg" alt="" />
+              </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-sky-400 p-4">
+                <img class="rounded-lg" src="./img/webpack.svg" alt="" />
+              </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-yellow-200 p-4">
+                <img class="rounded-lg" src="./img/pinia.svg" alt="" />
+              </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-gray-100 p-4">
+                <img class="rounded-lg" src="./img/nextjs.svg" alt="" />
+              </div>
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-green-100 p-4">
+                <img class="rounded-lg" src="./img/nuxt.png" alt="" />
+              </div>
+             
               <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-red-400 p-4">
                 <img class="rounded-lg" src="./img/git.svg" alt="" />
               </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-slate-200 p-4">
+              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-slate-100 p-4">
                 <img class="rounded-lg" src="./img/python.svg" alt="" />
               </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-rose-200 p-4">
-                <img class="rounded-lg" src="./img/npm.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-indigo-200 p-4">
-                <img class="rounded-lg" src="./img/eslint.svg" alt="" />
-              </div>
-              <div
-                class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-emerald-200 p-4"
-              >
-                <img src="./img/vue.svg" alt="vue.js" />
-              </div>
-              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-red-200 p-4">
-                <img src="./img/html.svg" alt="" />
-              </div>
-              <div class="h-20 w-20 flex-shrink-0 rounded-lg bg-sky-200 p-4">
-                <img src="./img/css.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-slate-200 p-4">
-                <img src="./img/tailwind.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-[#f7cb4f] p-4">
-                <img class="rounded-lg" src="./img/js.webp" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-red-400 p-4">
-                <img class="rounded-lg" src="./img/git.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-slate-200 p-4">
-                <img class="rounded-lg" src="./img/python.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-rose-200 p-4">
-                <img class="rounded-lg" src="./img/npm.svg" alt="" />
-              </div>
-              <div class="flex h-20 w-20 flex-shrink-0 justify-center rounded-lg bg-indigo-200 p-4">
-                <img class="rounded-lg" src="./img/eslint.svg" alt="" />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -161,16 +147,16 @@
         <div
           class="honer-bg h-52 w-full rounded-xl bg-cover bg-center bg-no-repeat sm:h-auto md:w-[45%]"
         ></div>
-        <!-- 荣誉 -->
+        <!-- 工作经历 -->
         <div
           class="bg-stripe w-full rounded-xl border bg-slate-50 p-4 dark:border-slate-900 dark:bg-slate-800 md:w-[50%]"
         >
-          <p class="text-[12px]">荣誉墙</p>
+          <p class="text-[12px]">工作经历</p>
           <h1 class="mt-2 text-4xl font-bold">追风赶月</h1>
           <div class="mt-4 md:text-base lg:text-xl">
-            <p class="py-1">🏅 "创新创意创业"挑战赛省一等奖</p>
-            <p class="py-1">🥉 蓝桥杯 Web 开发组国家三等奖</p>
-            <p class="py-1">🥉 字节跳动前端青训大项目三等奖</p>
+            <p class="py-1">🦄 Now. 成都 / 电子科技大学 / 毕业设计ing</p>
+            <p class="py-1">🎉 2024.8 深圳 / PCG 社交产品部 / Vue</p>
+            <p class="py-1">🚗 2024.2 北京 / Momenta / React</p>
           </div>
         </div>
       </div>
