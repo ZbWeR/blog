@@ -13,9 +13,9 @@
 </template>
 
 <script setup>
-import { VPTeamPage, VPTeamPageTitle } from "vitepress/theme";
-import ProjectCard from "./ProjectCard.vue";
-import { projectsInfo } from "../userConfig/projectsInfo";
+import { VPTeamPage, VPTeamPageTitle } from 'vitepress/theme'
+import ProjectCard from './ProjectCard.vue'
+import { projectsInfo } from '../../userConfig/projectsInfo'
 </script>
 
 <style scoped>
@@ -25,5 +25,6 @@ import { projectsInfo } from "../userConfig/projectsInfo";
   max-width: 1152px;
   gap: 24px;
   margin: 0 auto;
+  padding-bottom: 24px;
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <div class="home flex h-screen w-screen items-center justify-center">
     <EmojiBackground />
-    <div class=" -mt-10 sm:-mt-40 flex w-screen animate-scale-in-center flex-col px-4 sm:w-[626px]">
-      <Vue3Lottie :animationData="lottieData" class=" w-full sm:w-[626px]" />
+    <div class="-mt-10 flex w-screen animate-scale-in-center flex-col px-4 sm:-mt-40 sm:w-[626px]">
+      <Vue3Lottie :animationData="lottieData" class="w-full sm:w-[626px]" />
       <div
-        class="mt-6 flex w-full flex-col items-center rounded-lg bg-white/85  py-6 text-zinc-800 shadow shadow-black/40 backdrop-blur-sm relative"
+        class="relative mt-6 flex w-full flex-col items-center rounded-lg bg-white/85 py-6 text-zinc-800 shadow shadow-black/40 backdrop-blur-sm"
       >
         <div class="text-2xl font-bold sm:text-3xl">
           <span class="shake-hand inline-block">👋</span> Hi, I am
@@ -12,7 +12,7 @@
             >Bowen Zhang</span
           >.
         </div>
-        <p class="mt-2 sm:text-lg text-base">UESTC / Cat Cult / Front-End Developer</p>
+        <p class="mt-2 text-base sm:text-lg">UESTC / Cat Cult / Front-End Developer</p>
         <p class="mt-1 text-black/50">“地球其实只是一个柯基的屁股”</p>
         <div class="mt-4 flex gap-4">
           <div

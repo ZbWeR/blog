@@ -18,17 +18,17 @@
 <script setup lang="ts">
 import { useData, useRoute } from 'vitepress'
 import LinkText from './LinkText.vue'
-import { computed } from 'vue';
-import { useSidebar } from 'vitepress/theme';
-import { RiExternalLinkLine } from '@remixicon/vue';
+import { computed } from 'vue'
+import { useSidebar } from 'vitepress/theme'
+import { RiExternalLinkLine } from '@remixicon/vue'
 
 const { theme, frontmatter } = useData()
 const { footer } = theme.value
 const { hasSidebar } = useSidebar()
 
-const showFooter = computed(()=>{
-  const footer:boolean = frontmatter.value.footer ?? true;
+const showFooter = computed(() => {
+  const footer: boolean = frontmatter.value.footer ?? true
   // 当侧边栏可见时，不显示页脚
-  return footer && !hasSidebar.value;
+  return footer && !hasSidebar.value
 })
 </script>

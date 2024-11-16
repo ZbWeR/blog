@@ -6,9 +6,11 @@
   >
     <div class="flex w-full items-center gap-5">
       <!-- 头像 -->
-      <div class="VP-shadow sm:h-[70px] sm:w-[70px] h-14 w-14 flex-shrink-0 overflow-hidden rounded-full">
+      <div
+        class="VP-shadow h-14 w-14 flex-shrink-0 overflow-hidden rounded-full sm:h-[70px] sm:w-[70px]"
+      >
         <img v-if="avatar" :src="avatar" :alt="name" />
-        <img v-else src="./img/avatar-fallback.png" alt="默认头像" />
+        <img v-else src="../img/avatar-fallback.png" alt="默认头像" />
       </div>
       <!-- 简介 -->
       <div class="flex-1">
@@ -25,7 +27,7 @@
             {{ tag }}
           </Badge>
         </div>
-        <p class="sm:text-base text-sm mt-1 line-clamp-2 w-full break-words dark:text-zinc-400">
+        <p class="mt-1 line-clamp-2 w-full break-words text-sm dark:text-zinc-400 sm:text-base">
           {{ title }}
         </p>
         <div
@@ -42,9 +44,9 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import Badge from '../components/Badge.vue'
+import Badge from '../../components/Badge.vue'
 import { RiExternalLinkLine } from '@remixicon/vue'
-import { Friend } from '../userConfig/friendsInfo';
+import { Friend } from '../../userConfig/friendsInfo'
 
 const friendsInfo = defineProps<Friend>()
 

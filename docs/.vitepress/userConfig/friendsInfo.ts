@@ -123,7 +123,7 @@ export const friendsInfo: Friend[] = [
   },
   {
     name: 'Kawhicurry',
-    title:"The future is already here.It's just not evenly distributed.",
+    title: "The future is already here.It's just not evenly distributed.",
     link: 'https://kawhicurry.github.io/',
     avatar: 'https://avatars.githubusercontent.com/u/68467656?v=4',
     tag: 'SRE',

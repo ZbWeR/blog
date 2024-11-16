@@ -1,11 +1,11 @@
 <template>
   <div
     @click="openLink"
-    class="link-card my-3 p-4 transition-all duration-300 rounded-lg shadow-sm cursor-pointer hover:bg-blue-100/80 dark:shadow-sky-900/80 hover:scale-[0.99] shadow-blue-400/60 dark:bg-sky-950 dark:hover:bg-sky-950/80 bg-blue-200/30 group"
+    class="link-card group my-3 cursor-pointer rounded-lg bg-blue-200/30 p-4 shadow-sm shadow-blue-400/60 transition-all duration-300 hover:scale-[0.99] hover:bg-blue-100/80 dark:bg-sky-950 dark:shadow-sky-900/80 dark:hover:bg-sky-950/80"
   >
-    <header class="font-bold">{{ icon || "🐳" }} {{ desc }}</header>
+    <header class="font-bold">{{ icon || '🐳' }} {{ desc }}</header>
     <footer
-      class="mt-1 transition-all duration-300 text-slate-500 dark:text-slate-400 dark:group-hover:text-sky-400 line-clamp-1"
+      class="mt-1 line-clamp-1 text-slate-500 transition-all duration-300 dark:text-slate-400 dark:group-hover:text-sky-400"
     >
       {{ link }}
     </footer>
@@ -13,8 +13,8 @@
 </template>
 
 <script setup>
-const { desc, link, icon } = defineProps(["desc", "link", "icon"]);
+const { desc, link, icon } = defineProps(['desc', 'link', 'icon'])
 function openLink() {
-  window.open(link, "_blank");
+  window.open(link, '_blank')
 }
 </script>

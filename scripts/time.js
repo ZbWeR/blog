@@ -41,7 +41,7 @@ async function updateFiles() {
     .toString()
     .split('\n')
   for (const file of stagedFiles) {
-    if (!file.endsWith('.md')) continue;
+    if (!file.endsWith('.md')) continue
     const filePath = path.resolve(dirPath, file)
     await getFileModificationTime(filePath)
     execSync(`git add ${filePath}`)

@@ -3,11 +3,7 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
   /* 图标背景 */
-  --vp-home-hero-image-background-image: linear-gradient(
-    135deg,
-    #f6ceec 10%,
-    #d939cd 100%
-  );
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #f6ceec 10%, #d939cd 100%);
   --vp-home-hero-image-filter: blur(100px);
   /* brand按钮 */
   --vp-button-brand-bg: rgb(56, 189, 248);
@@ -41,7 +37,7 @@
 
 /* 主页标题设置, 采用自定义的图片 */
 .main .name {
-  background-image: url("/title.png");
+  background-image: url('/title.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

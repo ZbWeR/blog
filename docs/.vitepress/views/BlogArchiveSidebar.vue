@@ -1,25 +1,23 @@
 <template>
   <div class="lg:sticky lg:top-20">
     <!-- 类别 -->
-    <div class="px-2 pb-3 border-b-2 border-sky-400 dark:border-sky-700">
+    <div class="border-b-2 border-sky-400 px-2 pb-3 dark:border-sky-700">
       <h1
-        class="pb-2 text-3xl font-bold transition-all duration-300 border-b-4 border-sky-500 dark:border-sky-700 w-fit hover:pr-6"
+        class="w-fit border-b-4 border-sky-500 pb-2 text-3xl font-bold transition-all duration-300 hover:pr-6 dark:border-sky-700"
       >
         🏷️ 文章分类
       </h1>
       <div class="mt-4">
         <div
           @click="openLink(category.link)"
-          class="relative px-2 py-1 transition-all rounded-lg hover:cursor-pointer hover:bg-sky-200/80 dark:hover:bg-sky-900/80"
+          class="relative rounded-lg px-2 py-1 transition-all hover:cursor-pointer hover:bg-sky-200/80 dark:hover:bg-sky-900/80"
           v-for="category in categories"
           :key="category.name"
         >
           <h1 class="font-bold">{{ category.name }}</h1>
-          <p class="text-sm line-clamp-1">{{ category.desc }}</p>
-          <div
-            class="absolute flex items-center justify-end -translate-y-1/2 right-2 top-1/2"
-          >
-            <p>{{ category.icon || "🔗" }}</p>
+          <p class="line-clamp-1 text-sm">{{ category.desc }}</p>
+          <div class="absolute right-2 top-1/2 flex -translate-y-1/2 items-center justify-end">
+            <p>{{ category.icon || '🔗' }}</p>
             <svg
               class=""
               width="15"
@@ -41,11 +39,11 @@
 
     <!-- 随机一言 -->
     <div
-      class="flex gap-2 py-2 mt-4 rounded-lg shadow-md bg-amber-100/80 dark:bg-amber-950/80"
+      class="mt-4 flex gap-2 rounded-lg bg-amber-100/80 py-2 shadow-md dark:bg-amber-950/80"
       v-if="quoteInfo.string"
     >
       <span class="self-start text-2xl">“</span>
-      <div class="flex-1 my-4 indent-4">
+      <div class="my-4 flex-1 indent-4">
         <h1>{{ quoteInfo.string }}</h1>
         <p v-if="quoteInfo.from" class="text-right">—— 《{{ quoteInfo.from }}》</p>
       </div>
@@ -61,30 +59,30 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive } from "vue";
-import { type Category } from "../utils/types.js";
-import { useRouter } from "vitepress";
+import { onMounted, reactive } from 'vue'
+import { type Category } from '../utils/types.js'
+import { useRouter } from 'vitepress'
 
-const router = useRouter();
-const { types, features } = defineProps(["types", "features"]);
-const categories: Category[] = [...types];
+const router = useRouter()
+const { types, features } = defineProps(['types', 'features'])
+const categories: Category[] = [...types]
 
 // 打开文章链接
-const openLink = (link: string | undefined) => link && router.go(link);
+const openLink = (link: string | undefined) => link && router.go(link)
 
 // 随机一言
 const quoteInfo = reactive({
-  string: "",
-  from: "",
-});
+  string: '',
+  from: ''
+})
 
 onMounted(async () => {
-  fetch("https://v1.hitokoto.cn?c=a&c=b&c=d&c=i&min_length=10")
+  fetch('https://v1.hitokoto.cn?c=a&c=b&c=d&c=i&min_length=10')
     .then((response) => response.json())
     .then(({ hitokoto, from }) => {
-      quoteInfo.string = hitokoto;
-      quoteInfo.from = from;
+      quoteInfo.string = hitokoto
+      quoteInfo.from = from
     })
-    .catch(console.error);
-});
+    .catch(console.error)
+})
 </script>

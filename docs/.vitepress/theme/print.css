@@ -24,7 +24,7 @@
 /* 强制显示背景色 */
 .vp-doc {
   print-color-adjust: exact;
-  @apply print:leading-normal print:text-sm;
+  @apply print:text-sm print:leading-normal;
 }
 
 /* 自定义组件 */

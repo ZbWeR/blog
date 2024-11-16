@@ -1,15 +1,15 @@
 <template>
-  <div class="min-w-full border dark:border-slate-500 rounded-md flex bg-white dark:bg-slate-800">
-    <div class="p-5 mx-auto flex flex-nowrap justify-start overflow-auto scroll-bar">
+  <div class="flex min-w-full rounded-md border bg-white dark:border-slate-500 dark:bg-slate-800">
+    <div class="scroll-bar mx-auto flex flex-nowrap justify-start overflow-auto p-5">
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="flex flex-shrink-0 w-32 max-w-[12rem] items-center"
-        :class="index % 2 ? ' flex-col-reverse' : 'flex-col'"
+        class="flex w-32 max-w-[12rem] flex-shrink-0 items-center"
+        :class="index % 2 ? 'flex-col-reverse' : 'flex-col'"
       >
         <div
-          class="w-full flex items-center justify-end opacity-80"
-          :class="index % 2 ? ' flex-col-reverse' : 'flex-col'"
+          class="flex w-full items-center justify-end opacity-80"
+          :class="index % 2 ? 'flex-col-reverse' : 'flex-col'"
           :ref="(el) => (itemContentRef[index] = el as HTMLElement)"
         >
           <div
@@ -23,14 +23,14 @@
           </div>
           <span
             v-if="index % 2"
-            :class="['translate-y-1/2 rotate-45 w-2 h-2', THEME_MAP[item.theme].container]"
+            :class="['h-2 w-2 translate-y-1/2 rotate-45', THEME_MAP[item.theme].container]"
           ></span>
           <span
             v-else
-            :class="['-translate-y-1/2 rotate-45 w-2 h-2', THEME_MAP[item.theme].container]"
+            :class="['h-2 w-2 -translate-y-1/2 rotate-45', THEME_MAP[item.theme].container]"
           ></span>
         </div>
-        <div class="flex w-full my-1.5">
+        <div class="my-1.5 flex w-full">
           <div :class="index === 0 ? 'flex-1' : 'dot'"></div>
           <div :class="['h-2 w-2 rounded-full', THEME_MAP[item.theme].dot]"></div>
           <div :class="index === items.length - 1 ? 'flex-1' : 'dot'"></div>
@@ -38,7 +38,7 @@
         <div
           :ref="(el) => (itemDateRef[index] = el as HTMLElement)"
           :class="[
-            'text-xs flex flex-col justify-end opacity-80 py-1',
+            'flex flex-col justify-end py-1 text-xs opacity-80',
             THEME_MAP[item.theme].content
           ]"
         >
@@ -125,17 +125,17 @@ onMounted(() => {
 <style scoped>
 .dot::after {
   content: '';
-  @apply bg-purple-50 border-b h-0 border-dashed block w-full;
+  @apply block h-0 w-full border-b border-dashed bg-purple-50;
 }
 .dot {
-  @apply flex-1 flex items-center;
+  @apply flex flex-1 items-center;
 }
 
 .scroll-bar::-webkit-scrollbar {
-  @apply  h-1.5 rounded-md;
+  @apply h-1.5 rounded-md;
 }
 .scroll-bar::-webkit-scrollbar-thumb {
-  @apply bg-slate-400/50 rounded-md;
+  @apply rounded-md bg-slate-400/50;
 }
 .scroll-bar::-webkit-scrollbar-button {
   @apply w-1;
