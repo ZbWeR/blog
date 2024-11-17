@@ -106,12 +106,12 @@ export const friendsInfo: Friend[] = [
     tag: 'CV'
   },
   {
-    name: 'c0s1ne',
-    link: 'blog.cos02.top',
-    title: 'Keep Passion.',
-    avatar: 'https://avatars.githubusercontent.com/u/102515482?v=4',
-    color: 'pink',
-    tag: 'Front-end'
+    name: '柳苏明',
+    title: '有人生来就被幸福环绕，有人生来就被长夜围绕',
+    link: 'https://ignotusjee.github.io/',
+    avatar: 'https://ignotusjee.github.io/img/avatar.jpg',
+    tag: 'sys',
+    color: 'orange'
   },
   {
     avatar: 'https://avatars.githubusercontent.com/u/163713803?v=4',
@@ -128,5 +128,20 @@ export const friendsInfo: Friend[] = [
     avatar: 'https://avatars.githubusercontent.com/u/68467656?v=4',
     tag: 'SRE',
     color: 'green'
+  },
+  {
+    name: 'c0s1ne',
+    link: 'blog.cos02.top',
+    title: 'Keep Passion.',
+    avatar: 'https://avatars.githubusercontent.com/u/102515482?v=4',
+    color: 'pink',
+    tag: 'Front-end'
+  },
+  {
+    name: '戴森球',
+    title: '永远相信美好的事情即将发生',
+    link: 'http://www.daisenqiu.top/',
+    avatar: 'https://avatars.githubusercontent.com/u/142326902?v=4',
+    tag: '海康威视'
   }
 ]
