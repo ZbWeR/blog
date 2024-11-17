@@ -26,26 +26,21 @@ async function getFileModificationTime(filePath) {
     })
     // 写入文件
     await fs.writeFile(filePath, newContent)
-    console.log(`File ${filePath} updated successfully`)
+
+    const fileName = path.basename(filePath)
+    console.log(`【time.js】 ${fileName}  ✔️`)
   } catch (err) {
     console.error(`Error processing file ${filePath}:`, err)
   }
 }
 
-/**
- * 获取暂存区文件列表并更新文件头部
- */
-async function updateFiles() {
-  const dirPath = process.cwd()
-  const stagedFiles = execSync('git diff --name-only --cached', { encoding: 'utf-8' })
-    .toString()
-    .split('\n')
+async function LintStagedTask(stagedFiles) {
   for (const file of stagedFiles) {
-    if (!file.endsWith('.md')) continue
-    const filePath = path.resolve(dirPath, file)
-    await getFileModificationTime(filePath)
-    execSync(`git add ${filePath}`)
+    await getFileModificationTime(file)
   }
 }
 
-updateFiles()
+const args = process.argv.slice(2)
+if (args.length) {
+  LintStagedTask(args)
+}
