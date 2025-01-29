@@ -8,4 +8,5 @@ node_modules
 # lock file
 yarn.lock
 package-lock.json
-pnpm-lock.yaml
+
+.vercel

@@ -29,8 +29,8 @@
     "@remixicon/vue": "^4.2.0",
     "dayjs": "^1.11.9",
     "gray-matter": "^4.0.3",
+    "medium-zoom": "^1.1.0",
     "vue": "^3.5.6",
-    "vue3-lottie": "^3.3.1",
-    "medium-zoom": "^1.1.0"
+    "vue3-lottie": "^3.3.1"
   }
 }

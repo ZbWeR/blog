@@ -9,7 +9,15 @@ export default defineConfig({
   lastUpdated: true,
   description:
     "zbwer's tech blog: An undergraduate's journey through frontend development, sharing insights, tips, and experiences in web technologies.",
-  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg' }],
+    [
+      'script',
+      {},
+      `window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`
+    ],
+    ['script', { defer: '', src: '/_vercel/insights/script.js' }]
+  ],
   themeConfig: {
     logo: '/logo.svg',
     // 顶部导航栏
