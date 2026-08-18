@@ -114,14 +114,6 @@ export const friendsInfo: Friend[] = [
     color: 'orange'
   },
   {
-    avatar: 'https://avatars.githubusercontent.com/u/163713803?v=4',
-    name: 'LofiSu',
-    title: 'Learning is a lifelong journey.Keep going.',
-    link: 'https://www.lofisu.chat/',
-    tag: 'Front-end',
-    color: 'sky'
-  },
-  {
     name: 'Kawhicurry',
     title: "The future is already here.It's just not evenly distributed.",
     link: 'https://kawhicurry.github.io/',
