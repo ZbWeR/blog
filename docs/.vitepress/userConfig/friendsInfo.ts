@@ -22,7 +22,7 @@ export const friendsInfo: Friend[] = [
     avatar: 'https://avatars.githubusercontent.com/u/108560334?v=4',
     name: 'Ma5hr00m',
     title: '在摇摆与徘徊中前行',
-    link: 'https://blog.kinoko.fun/',
+    link: 'https://kinoko.fun/',
     tag: 'Web Developer',
     color: 'orange'
   },
@@ -46,7 +46,7 @@ export const friendsInfo: Friend[] = [
     avatar: 'https://avatars.githubusercontent.com/u/108183563?v=4',
     name: 'ZzzRemake',
     title: 'Curious and Passionate',
-    link: 'https://zzzremake.github.io/',
+    link: 'https://zzzremake.github.io/site/',
     color: 'indigo'
   },
   {
@@ -85,7 +85,7 @@ export const friendsInfo: Friend[] = [
     avatar: 'https://avatars.githubusercontent.com/u/91458671?v=4',
     name: 'Rui1',
     title: 'Visionary and Driven ',
-    link: 'https://blog.ruinique.cn/',
+    link: 'https://blog.ruinique.com/',
     tag: 'Backend',
     color: 'sky'
   },
@@ -123,7 +123,7 @@ export const friendsInfo: Friend[] = [
   },
   {
     name: 'c0s1ne',
-    link: 'blog.cos02.top',
+    link: 'https://me.cos02.top/',
     title: 'Keep Passion.',
     avatar: 'https://avatars.githubusercontent.com/u/102515482?v=4',
     color: 'pink',
